@@ -51,7 +51,7 @@ pip install xformers
 
 Launch the webui. It will take some time to complete first-time installation then everything should be fine
 
-cd stable-diffusion-webui && python launch.py --skip-torch-cuda-test --precision full --enable-insecure-extension-access --use-cpu all --opt-sdp-attention --opt-split-attention --opt-sub-quad-attention --upcast-sampling --autolaunch --theme=dark --no-half --no-gradio-queue --disable-model-loading-ram-optimization
+cd stable-diffusion-webui && python launch.py --skip-torch-cuda-test --precision full --enable-insecure-extension-access --use-cpu all --opt-sdp-attention --opt-split-attention --upcast-sampling --autolaunch --theme=dark --no-half --no-gradio-queue --disable-model-loading-ram-optimization
 
 
 

@@ -1,5 +1,4 @@
-# Automatic1111-Android-Termux
-Automatic1111 on android termux!
+SADLY THIS NO LONGER WORKS AS PYTHON 3.12 BROKE THE APP
 
 
 Install stable-diffusion-webui on Termux (Android) + PRoot

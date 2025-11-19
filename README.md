@@ -1,11 +1,11 @@
-SADLY THIS NO LONGER WORKS AS PYTHON 3.12 BROKE THE APP
+it works on current Ubuntu setup python 3.10 is back
 
 
 Install stable-diffusion-webui on Termux (Android) + PRoot
 This will guide you on installing AUTOMATIC1111/stable-diffusion-webui on Termux (Android) + PRoot Distro. Make sure that you have a high-end phone to actually make this usable. On my phone with 8GB RAM, launch the webui alone take at least ~ 2 GB RAM, thus making it impossible to load any model and process further.
 
 
-pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu22/ubuntu22.sh -O ubuntu22.sh && chmod +x ubuntu22.sh && bash ubuntu22.sh 
+pkg update && pkg upgrade -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu22/ubuntu22.sh -O ubuntu22.sh && chmod +x ubuntu22.sh && bash ubuntu22.sh 
 
 
 

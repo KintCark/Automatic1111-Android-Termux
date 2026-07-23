@@ -2,10 +2,10 @@ it works on current Ubuntu setup python 3.10 is back
 
 
 Install stable-diffusion-webui on Termux (Android) + PRoot
-This will guide you on installing AUTOMATIC1111/stable-diffusion-webui on Termux (Android) + PRoot Distro. Make sure that you have a high-end phone to actually make this usable. On my phone with 8GB RAM, launch the webui alone take at least ~ 2 GB RAM, thus making it impossible to load any model and process further.
+This will guide you on installing AUTOMATIC1111/stable-diffusion-webui on Termux (Android) + native Make sure that you have a high-end phone to actually make this usable. On my phone with 8GB RAM, launch the webui alone take at least ~ 2 GB RAM, thus making it impossible to load any model and process further.
 
 
-pkg update && pkg upgrade -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu22/ubuntu22.sh -O ubuntu22.sh && chmod +x ubuntu22.sh && bash ubuntu22.sh 
+pkg update && pkg upgrade -y && pkg pkg install git cmake python wget && pkg install libwebp && pkg install nodejs && npm install -g npm@12.0.1 -g pnpm
 
 
 
@@ -15,13 +15,6 @@ First you have to install Termux and install PRoot. Then install and login to Ub
 2. Installing AUTOMATIC1111/stable-diffusion-webui
 
 Run below commands sequentially as root user in Ubuntu
-
-Install basic tools
-apt update && apt upgrade -y && apt-get install curl git gcc make build-essential python3 python3-dev python3-distutils python3-pip python3-venv python-is-python3 -y 
-
-Install required extensions
-
-apt-get install libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 -y
 
 Clone the repository
 
@@ -39,6 +32,8 @@ cd stable-diffusion-webui
 export ANDROID_DATA=anything 
 
 Install required Python packages
+
+pkg install ninja
 
 pip install -r requirements.txt 
 

@@ -26,6 +26,8 @@ Change the current directory
 
 cd stable-diffusion-webui 
 
+git switch dev
+git pull
 
 'Fix' the issue with Python running in PRoot
 

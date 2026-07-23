@@ -37,11 +37,9 @@ Install required Python packages
 
 pkg install ninja
 
-pip install -r requirements.txt 
+pip install "protobuf==3.20.3" "tensorboard<2.12.0"
 
-Install xformers. This package is not required, but is recommended to be installed
-
-pip install xformers 
+pip install -r requirements.txt
 
 Launch the webui. It will take some time to complete first-time installation then everything should be fine
 

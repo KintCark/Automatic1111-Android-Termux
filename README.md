@@ -4,13 +4,13 @@ it works on current Ubuntu setup python 3.10 is back
 Install stable-diffusion-webui on Termux (Android) + PRoot
 This will guide you on installing AUTOMATIC1111/stable-diffusion-webui on Termux (Android) + native Make sure that you have a high-end phone to actually make this usable. On my phone with 8GB RAM, launch the webui alone take at least ~ 2 GB RAM, thus making it impossible to load any model and process further.
 
-
-pkg update && pkg upgrade -y && pkg pkg install git cmake python wget && pkg install libwebp && pkg install nodejs && npm install -g npm@12.0.1 -g pnpm
-
-
-
 1. Prerequisites
 First you have to install Termux and install PRoot. Then install and login to Ubuntu in PRoot
+
+pkg update -y && pkg upgrade && pkg install wget curl curl -fsSL https://raw.githubusercontent.com/TecnicalBot/modded-distro/main/install.sh | bash
+
+
+pkg update && pkg upgrade -y && pkg pkg install git cmake python wget && pkg install libwebp && pkg install nodejs && npm install -g npm@12.0.1 -g pnpm
 
 2. Installing AUTOMATIC1111/stable-diffusion-webui
 
@@ -18,7 +18,7 @@ Run below commands sequentially as root user in Ubuntu
 
 Clone the repository
 
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui 
+git clone --recursive https://github.com/AUTOMATIC1111/stable-diffusion-webui 
 
 
 
